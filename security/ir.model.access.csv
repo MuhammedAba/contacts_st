@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.partner.member.types,access_partner_member_types,contacts_stk.model_partner_member_types,base.group_user,1,1,1,1
