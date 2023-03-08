@@ -23,6 +23,7 @@
         'security/ir.model.access.csv',
         "views/partner_member_types_views.xml",
         "views/partner_view.xml",
+        "views/partner_blood_groups.xml"
     ],
 
 }
