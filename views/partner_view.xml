@@ -7,21 +7,39 @@
           <field name="inherit_id" ref="base.view_partner_form"/>
           <field name="arch" type="xml">
               <xpath expr="//field[@name='vat']" position="after" >
-                <field name="partner_member_types" attrs="{'invisible': [('is_company','=', True)]}"/>
-                <field name="partner_blood_groups" attrs="{'invisible': [('is_company','=', True)]}"/>
+              <group>
+                    <field name="partner_member_types"  attrs="{'invisible': [('is_company','=', True)]}" required="1" />
+                    <field name="partner_blood_groups"  attrs="{'invisible': [('is_company','=', True)]}" required="1"/>
+                  <field name="partner_identity"  attrs="{'invisible': [('is_company','=', True)]}" required="1"/>
+                  <field name="partner_gender" attrs="{'invisible': [('is_company','=', True)]}" required="1"/>
+                   <field name="partner_birth_year" attrs="{'invisible': [('is_company','=', True)]}" required="1"/>
+                  <field name="partner_education_status" attrs="{'invisible': [('is_company','=', True)]}" required="1"/>
+                  <field name="partner_driving_license" widget="many2many_checkboxes" attrs="{'invisible': [('is_company','=', True)]}"  required="1"/>
+              </group>
               </xpath>
 
               <xpath expr="//page[@name = 'internal_notes']" position="after">
                   <page string="Extra Information" name="extra_installation_information">
                       <group>
-                          <field name="partner_birth_place" />
-                          <field name="partner_birth_certificate" />
-                          <field name="partner_profession_workplace"/>
-                          <field name="partner_sector" />
-                          <field name="partner_languages" />
-                          <field name="partner_family_ngo" />
-                          <field name="partner_passport" />
-                          <field name="partner_before_ngo" />
+                      <group >
+                        <field name="partner_birth_place" />
+                        <field name="partner_birth_certificate" />
+                            <field name="partner_before_ngo" widget="radio" options="{'horizontal': true}" />
+                            <br/>
+                            <field name="partner_family_ngo" widget="radio" options="{'horizontal': true}" />
+                            <br/>
+                            <field name="partner_conviction" />
+                          </group>
+                          <group >
+                            <field name="partner_profession_workplace"/>
+                            <field name="partner_sector" />
+                            <field name="partner_languages" />
+                          </group>
+                        <br/>
+                          <group >
+                            <field name="partner_passport" widget="radio" options="{'horizontal': true}" />
+                            
+                          </group>
                       </group>
                   </page>
               </xpath>
