@@ -38,7 +38,7 @@
         </record>
 
         <menuitem  id="menu_partner_member_types"
-               name="üyelik Tipleri"
+               name="Member Types"
                action="action_partner_member_types"
                parent="contacts.res_partner_menu_config"
                sequence="10"/>

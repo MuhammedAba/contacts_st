@@ -17,13 +17,17 @@
 
     # any module necessary for this one to work correctly
     'depends': ['contacts'],
+    
+    'sequence': -100 ,
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
+        "security/ir.model.access.csv",
+        "data/partner.blood.groups.csv",
         "views/partner_member_types_views.xml",
         "views/partner_view.xml",
         "views/partner_blood_groups.xml"
+        
     ],
 
 }

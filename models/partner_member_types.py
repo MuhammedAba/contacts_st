@@ -6,4 +6,4 @@ from odoo import models, fields, api
 class PartnerMemberTypes(models.Model):
     _name = "partner.member.types"
 
-    name = fields.Char(string="Üyelik Tipleri")
+    name = fields.Char(string="Member Types")

@@ -38,7 +38,7 @@
         </record>
 
         <menuitem  id="menu_partner_blood_groups"
-               name="Kan Grupları"
+               name="Blood groups"
                action="action_partner_blood_groups"
                parent="contacts.res_partner_menu_config"
                sequence="10"/>
