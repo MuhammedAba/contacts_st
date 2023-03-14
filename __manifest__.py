@@ -16,19 +16,23 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['contacts'],
+    'depends': ['contacts', 'website', 'base_address_city'],
     
-    'sequence': -100 ,
+    'sequence': -101,
+    'application': True,
 
     # always loaded
     'data': [
         "security/ir.model.access.csv",
         "data/partner.blood.groups.csv",
+        "data/partner.languages.csv",
+        "data/partner.driving.license.csv",
         "views/partner_member_types_views.xml",
         "views/partner_view.xml",
         "views/partner_blood_groups.xml",
         "views/partner_education_status_views.xml",
         "views/partner_driving_license_view.xml",
+        "views/partner_website_from_view.xml"
 
     ],
 
