@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-09 12:10+0000\n"
-"PO-Revision-Date: 2023-03-09 12:10+0000\n"
+"POT-Creation-Date: 2023-03-15 13:00+0000\n"
+"PO-Revision-Date: 2023-03-15 13:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,10 +16,15 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: contacts_stk
-#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_birth_certificate
-#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_birth_certificate
-msgid "Birth Certificate"
-msgstr "Nüfusa kayıtlı olduğu yer"
+#: model_terms:ir.ui.view,arch_db:contacts_stk.view_partner_form_inherit
+msgid "Additional Note"
+msgstr "Ek not"
+
+#. module: contacts_stk
+#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_extra_info
+#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_extra_info
+msgid "Additional Notes"
+msgstr "Ek notlar"
 
 #. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_birth_year
@@ -50,6 +55,12 @@ msgid "Contact"
 msgstr "Kontak"
 
 #. module: contacts_stk
+#: model:website.menu,name:contacts_stk.website_menu_volunteer_from
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
+msgid "Create Volunteer"
+msgstr "Gönüllü Oluştur"
+
+#. module: contacts_stk
 #: model_terms:ir.actions.act_window,help:contacts_stk.action_driving_license
 msgid "Create your first Driving License!"
 msgstr "Önce Ehliyetinizi oluşturun!"
@@ -73,6 +84,7 @@ msgstr "Önce üyelik tipinizi oluşturun!"
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__create_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__create_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__create_uid
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__create_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__create_uid
 msgid "Created by"
 msgstr "Tarafından yaratıldı"
@@ -81,6 +93,7 @@ msgstr "Tarafından yaratıldı"
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__create_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__create_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__create_date
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__create_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__create_date
 msgid "Created on"
 msgstr "oluşturuldu"
@@ -89,6 +102,7 @@ msgstr "oluşturuldu"
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__display_name
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__display_name
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__display_name
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__display_name
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__display_name
 msgid "Display Name"
 msgstr "Ekran adı"
@@ -104,6 +118,12 @@ msgstr "Pasaportunuz var mı?"
 #: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_before_ngo
 msgid "Do you have an NGO that you are a member of?"
 msgstr "Üyesi olduğunuz bir STK var mı?"
+
+#. module: contacts_stk
+#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_driving_license_control
+#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_driving_license_control
+msgid "Do you have driving license?"
+msgstr "Ehliyetiniz var mı?"
 
 #. module: contacts_stk
 #: model:ir.actions.act_window,name:contacts_stk.action_driving_license
@@ -143,15 +163,10 @@ msgstr "Cinsiyet"
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__id
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__id
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__id
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__id
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__id
 msgid "ID"
 msgstr "kimlik "
-
-#. module: contacts_stk
-#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_conviction
-#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_conviction
-msgid "If there is a sentence of conviction, the article and the reason."
-msgstr "Mahkûmiyet hükmü varsa maddesi ve gerekçesi."
 
 #. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_family_ngo
@@ -160,6 +175,12 @@ msgid "Is there anyone in the family with an NGO?"
 msgstr "Ailede STK'lı biri var mı?"
 
 #. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.view_partner_form_inherit
+msgid "Identification number"
+msgstr "Kimlik Numarası"
+
+#. module: contacts_stk
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__name
 #: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_languages
 #: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_languages
 msgid "Languages"
@@ -169,6 +190,7 @@ msgstr "Diller"
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups____last_update
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license____last_update
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status____last_update
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_languages____last_update
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types____last_update
 msgid "Last Modified on"
 msgstr "Son Değiştirme Tarihi"
@@ -177,6 +199,7 @@ msgstr "Son Değiştirme Tarihi"
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__write_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__write_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__write_uid
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__write_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__write_uid
 msgid "Last Updated by"
 msgstr "Son Güncelleyen"
@@ -185,9 +208,15 @@ msgstr "Son Güncelleyen"
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__write_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__write_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__write_date
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__write_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__write_date
 msgid "Last Updated on"
 msgstr "Son güncelleme tarihi"
+
+#. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
+msgid "Mail"
+msgstr "Posta"
 
 #. module: contacts_stk
 #: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_gender__male
@@ -208,16 +237,28 @@ msgid "Member types"
 msgstr "Üyelik Tipleri"
 
 #. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
+msgid "Muhammed Aba"
+msgstr "Muhammed Aba"
+
+#. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
+msgid "Name"
+msgstr "İsim"
+
+#. module: contacts_stk
+#: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_before_ngo__no
+#: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_driving_license_control__no
+#: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_family_ngo__no
+#: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_passport__no
+msgid "No"
+msgstr "Hayır"
+
+#. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_identity
 #: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_identity
 msgid "Partner Identity"
 msgstr "İş Ortağı Kimliği"
-
-#. module: contacts_stk
-#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_birth_place
-#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_birth_place
-msgid "Place Of Birth"
-msgstr "Doğum yeri"
 
 #. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_profession_workplace
@@ -230,6 +271,37 @@ msgstr "Meslek/İşyeri"
 #: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_sector
 msgid "Sector"
 msgstr "Sektör"
+
+#. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.volunteer_thanks_ir_ui_view
+#: model_terms:website.page,arch_db:contacts_stk.volunteer_thanks
+msgid "Thanks!"
+msgstr "Teşekkürler!"
+
+#. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.volunteer_thanks_ir_ui_view
+#: model_terms:website.page,arch_db:contacts_stk.volunteer_thanks
+msgid "The volunteer has been created successfully."
+msgstr "Gönüllü başarıyla oluşturuldu."
+
+#. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.volunteer_thanks_ir_ui_view
+#: model_terms:website.page,arch_db:contacts_stk.volunteer_thanks
+msgid "Visit our website any time!"
+msgstr "Web sitemizi istediğiniz zaman ziyaret edin!"
+
+#. module: contacts_stk
+#: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_before_ngo__yes
+#: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_driving_license_control__yes
+#: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_family_ngo__yes
+#: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_passport__yes
+msgid "Yes"
+msgstr "Evet"
+
+#. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
+msgid "aba@rasard.com"
+msgstr "aba@rasard.com"
 
 #. module: contacts_stk
 #: model:ir.model,name:contacts_stk.model_partner_blood_groups
@@ -245,6 +317,11 @@ msgstr "ortak.sürücü belgesi"
 #: model:ir.model,name:contacts_stk.model_partner_education_status
 msgid "partner.education.status"
 msgstr "ortak.eğitim.durumu"
+
+#. module: contacts_stk
+#: model:ir.model,name:contacts_stk.model_partner_languages
+msgid "partner.languages"
+msgstr "ortak.diller"
 
 #. module: contacts_stk
 #: model:ir.model,name:contacts_stk.model_partner_member_types
