@@ -14,8 +14,16 @@
 				   <div class="container">
 					   <form role="form" action="/create/volunteer" method="POST">
 						   <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+<!--						   <div class="form-group">-->
+<!--							   <label for="partner_blood_groups" class="control-label" >Blood Types</label>-->
+<!--							   <select name="partner_blood_groups" class="form-control link-style">-->
+<!--								   <t t-foreach="blood_rec" t-as="blood">-->
+<!--									   <option t-esc="blood.name" t-att-value="blood.id"/>-->
+<!--								   </t>-->
+<!--							   </select>-->
+<!--						   </div>-->
 						   <div class="form-group">
-							   <label for="name" class="control-label">Name</label>
+							   <label for="name" class="control-label">Name-Surname</label>
 							   <input type="text" name="name" t-att-value="name" id="name"
 									  class="form-control" placeholder="Muhammed Aba"/>
 							   <label for="phone" class="control-label">Phone Number</label>
@@ -26,9 +34,26 @@
 							   <label for="email" class="control-label">Mail</label>
 							   <input type="text" name="email" t-att-value="email" id="email"
 									  class="form-control"/>
-<!--									  class="form-control" placeholder="example@example"/>-->
+
 						   </div>
-						   <div class="clearfix_stk_login_buttons">
+
+						   <div class="form-group">
+							   <label for="partner_member_types" class="control-label" >Member Types</label>  <!--# FieldName-->
+							   <select name="partner_member_types" class="form-control link-style">  <!--FieldName-->
+								   <t t-foreach="member_rec" t-as="member">  <!--value of volunteer_webform-->
+									   <option t-esc="member.name" t-att-value="member.id"/>
+								   </t>
+							   </select>
+						   </div>
+						    <div class="form-group">
+							   <label for="partner_blood_groups" class="control-label" >Blood Types</label>
+							   <select name="partner_blood_groups" class="form-control link-style">
+								   <t t-foreach="blood_rec" t-as="blood">
+									   <option t-esc="blood.name" t-att-value="blood.id"/>
+								   </t>
+							   </select>
+						   </div>
+						    <div class="clearfix_stk_login_buttons">
 							   <button type="submit" class="btn btn-primary pull-left">Create Volunteer</button>
 						   </div>
 					   </form>
