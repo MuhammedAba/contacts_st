@@ -12,6 +12,7 @@ class Partner(models.Model):#orjinalini yaz
     partner_blood_groups = fields.Many2one("partner.blood.groups", string="Blood Groups")
     partner_gender = fields.Selection([("male", "Male"), ("female", "Female")], string="Gender")
     partner_birth_date = fields.Date(string="Birth Date")
+    partner_city = fields.Char(string="City")
 
     #TAB1 Extra İnformation
     # partner_birth_place = fields.Char( string="Place Of Birth")

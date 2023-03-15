@@ -11,6 +11,7 @@
                   <field name="partner_blood_groups"  attrs="{'invisible': [('is_company','=', True)]}" />
                   <field name="partner_identity"  attrs="{'invisible': [('is_company','=', True)]}" />
                   <field name="partner_gender" attrs="{'invisible': [('is_company','=', True)]}" />
+                  <field name="partner_city" attrs="{'invisible': [('is_company','=', True)]}" />
                   <field name="partner_birth_date" attrs="{'invisible': [('is_company','=', True)]}" />
                   <field name="partner_education_status" attrs="{'invisible': [('is_company','=', True)]}" />
                   <field name="partner_driving_license_control"  widget="radio" options="{'horizontal': true}" />
