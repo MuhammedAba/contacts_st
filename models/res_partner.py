@@ -13,6 +13,7 @@ class Partner(models.Model):#orjinalini yaz
     partner_gender = fields.Selection([("male", "Male"), ("female", "Female")], string="Gender")
     partner_birth_date = fields.Date(string="Birth Date")
     partner_city = fields.Char(string="City")
+    partner_contact_choice_control = fields.Selection([("email", "E-mail"), ("phone", "Phone")], string="How can we contact?")
 
     #TAB1 Extra İnformation
     # partner_birth_place = fields.Char( string="Place Of Birth")
