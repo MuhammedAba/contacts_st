@@ -14,14 +14,6 @@
 				   <div class="container">
 					   <form role="form" action="/create/volunteer" method="POST">
 						   <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-<!--						   <div class="form-group">-->
-<!--							   <label for="partner_blood_groups" class="control-label" >Blood Types</label>-->
-<!--							   <select name="partner_blood_groups" class="form-control link-style">-->
-<!--								   <t t-foreach="blood_rec" t-as="blood">-->
-<!--									   <option t-esc="blood.name" t-att-value="blood.id"/>-->
-<!--								   </t>-->
-<!--							   </select>-->
-<!--						   </div>-->
 						   <div class="form-group">
 							   <label for="name" class="control-label">Name-Surname</label>
 							   <input type="text" name="name" t-att-value="name" id="name"
@@ -34,9 +26,7 @@
 							   <label for="email" class="control-label">Mail</label>
 							   <input type="text" name="email" t-att-value="email" id="email"
 									  class="form-control"/>
-
 						   </div>
-
 						   <div class="form-group">
 							   <label for="partner_member_types" class="control-label" >Member Types</label>  <!--# FieldName-->
 							   <select name="partner_member_types" class="form-control link-style">  <!--FieldName-->
