@@ -38,7 +38,8 @@
                           <group >
 <!--                              <field name="partner_birth_place" />-->
 <!--                              <field name="partner_birth_certificate" />-->
-                              <field name="partner_before_ngo" widget="radio" options="{'horizontal': true}" />
+                            <field name="partner_before_ngo_control"  widget="radio" options="{'horizontal': true}" />
+                              <field name="partner_before_ngo" widget="char" attrs="{'invisible':[('partner_driving_license_control','=', 'no')]}" />
                               <br/>
                               <field name="partner_family_ngo" widget="radio" options="{'horizontal': true}" />
                               <br/>

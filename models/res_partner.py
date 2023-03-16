@@ -25,6 +25,7 @@ class Partner(models.Model):#orjinalini yaz
     partner_sector = fields.Char(string="Sector")
     partner_languages = fields.Many2many("partner.languages", string="Languages")
     partner_passport = fields.Selection([('yes', 'Yes'), ('no', 'No')], string='Do you have a passport?')
-    partner_before_ngo = fields.Selection([('yes', 'Yes'), ('no', 'No')], string='Do you have an NGO that you are a member of?')
+    partner_before_ngo_control = fields.Selection([('yes', 'Yes'), ('no', 'No')], string="Do you have an NGO that you are a member of?")
+    partner_before_ngo = fields.Selection([('yes', 'Yes'), ('no', 'No')], string='Please Ngo enter.')
     partner_family_ngo = fields.Selection([('yes', 'Yes'), ('no', 'No')], string='Is there anyone in the family with an NGO?')
     partner_extra_info = fields.Char(string="Additional Notes")
