@@ -9,18 +9,18 @@
               <xpath expr="//field[@name='vat']" position="after" >
                   <field name="partner_member_types"  attrs="{'invisible': [('is_company','=', True)]}"  />
                   <field name="partner_blood_groups"  attrs="{'invisible': [('is_company','=', True)]}" />
-                  <field name="partner_identity"  attrs="{'invisible': [('is_company','=', True)]}" />
+                  <field name="partner_job"  attrs="{'invisible': [('is_company','=', True)]}" />
                   <field name="partner_gender" attrs="{'invisible': [('is_company','=', True)]}" />
                   <field name="partner_city" attrs="{'invisible': [('is_company','=', True)]}" />
                   <field name="partner_birth_date" attrs="{'invisible': [('is_company','=', True)]}" />
-                  <field name="partner_education_status" attrs="{'invisible': [('is_company','=', True)]}" />
+                  <!-- <field name="partner_education_status"  attrs="{'invisible': [('is_company','=', True)]}" /> -->
                   <field name="partner_driving_license_control"  widget="radio" options="{'horizontal': true}" />
                   <field name="partner_driving_license" widget="many2many_tags" attrs="{'invisible':[('partner_driving_license_control','=', 'no')]}" />
                   <field name="partner_contact_choice_control"  widget="radio" options="{'horizontal': true}" />
               </xpath>
 
               <xpath expr="//field[@name='vat']" position="attributes">
-                  <attribute name="string">Kimlik Numarası</attribute>
+                  <attribute name="string" widget="char">Identification Number</attribute>
                   <field name="vat" attrs= "{'invisible': [('is_company','=', True)]}"/>
               </xpath>
 
@@ -39,13 +39,13 @@
 <!--                              <field name="partner_birth_place" />-->
 <!--                              <field name="partner_birth_certificate" />-->
                             <field name="partner_before_ngo_control"  widget="radio" options="{'horizontal': true}" />
-                              <field name="partner_before_ngo" widget="char" attrs="{'invisible':[('partner_driving_license_control','=', 'no')]}" />
+                              <field name="partner_before_ngo" widget="char" attrs="{'invisible':[('partner_before_ngo_control','=', 'no')]}" />
                               <br/>
                               <field name="partner_family_ngo" widget="radio" options="{'horizontal': true}" />
                               <br/>
                           </group>
                           <group >
-                              <field name="partner_profession_workplace"/>
+                              <!-- <field name="partner_profession_workplace"/> -->
                               <field name="partner_sector" />
                               <field name="partner_languages" widget="many2many_tags" attrs="{'invisible': [('is_company','=', True)]}"/>
                               <field name="partner_passport" widget="radio" options="{'horizontal': true}" />
