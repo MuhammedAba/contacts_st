@@ -36,8 +36,6 @@
                   <page string="Extra Information" name="extra_installation_information">
                       <group>
                           <group >
-<!--                              <field name="partner_birth_place" />-->
-<!--                              <field name="partner_birth_certificate" />-->
                             <field name="partner_before_ngo_control"  widget="radio" options="{'horizontal': true}" />
                               <field name="partner_before_ngo" widget="char" attrs="{'invisible':[('partner_before_ngo_control','=', 'no')]}" />
                               <br/>
@@ -45,8 +43,7 @@
                               <br/>
                           </group>
                           <group >
-                              <!-- <field name="partner_profession_workplace"/> -->
-                              <field name="partner_sector" />
+                              <field name="partner_sector" attrs="{'invisible': [('is_company','=', True)]}" />
                               <field name="partner_languages" widget="many2many_tags" attrs="{'invisible': [('is_company','=', True)]}"/>
                               <field name="partner_passport" widget="radio" options="{'horizontal': true}" />
                           </group>

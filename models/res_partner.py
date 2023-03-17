@@ -16,13 +16,14 @@ class Partner(models.Model):#orjinalini yaz
     partner_contact_choice_control = fields.Selection([("email", "E-mail"), ("phone", "Phone")], string="How can we contact?")
 
     #TAB1 Extra İnformation
+    
     # partner_birth_place = fields.Char( string="Place Of Birth")
     # partner_birth_certificate = fields.Char(string="Birth Certificate")
     partner_driving_license_control = fields.Selection([('yes', 'Yes'), ('no', 'No')], string="Do you have driving license?")
     partner_driving_license = fields.Many2many("partner.driving.license", string="Driving License")
     # partner_education_status = fields.Many2one("partner.education.status", string="Education Status")
     # partner_profession = fields.Many2one("partner.profession", string="Profession")
-    partner_sector = fields.Char(string="Sector")
+    partner_sector = fields.Many2one("partner.sector",string="Sector")
     partner_languages = fields.Many2many("partner.languages", string="Languages")
     partner_passport = fields.Selection([('yes', 'Yes'), ('no', 'No')], string='Do you have a passport?')
     partner_before_ngo_control = fields.Selection([('yes', 'Yes'), ('no', 'No')], string="Do you have an NGO that you are a member of?")
