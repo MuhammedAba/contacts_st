@@ -7,7 +7,6 @@ class Partner(models.Model):#orjinalini yaz
     _description = 'Contact'
     _inherit = "res.partner"
 
-    partner_identity = fields.Char(String="Identification Number")
     partner_member_types = fields.Many2one("partner.member.types", string="Member types")
     partner_blood_groups = fields.Many2one("partner.blood.groups", string="Blood Groups")
     partner_gender = fields.Selection([("male", "Male"), ("female", "Female")], string="Gender")
