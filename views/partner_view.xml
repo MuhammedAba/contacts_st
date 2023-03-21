@@ -1,6 +1,5 @@
 <odoo>
     <data>
-
        <record id="view_partner_form_inherit" model="ir.ui.view">
           <field name="name">res.partner.inherit</field>
           <field name="model">res.partner</field>
@@ -18,26 +17,24 @@
                   <field name="partner_driving_license" widget="many2many_tags" attrs="{'invisible':[('partner_driving_license_control','=', 'no')]}" />
                   <field name="partner_contact_choice_control"  widget="radio" options="{'horizontal': true}" />
               </xpath>
-
+              <!-- String of vat changed as Kimlik Numarası and  set to invisible when selected as company-->
               <xpath expr="//field[@name='vat']" position="attributes">
                   <attribute name="string">Kimlik Numarası</attribute>
-                  <field name="vat" attrs= "{'invisible': [('is_company','=', True)]}"/>
+                  <attribute name="attrs">{'invisible':[('is_company','=', True)]}</attribute>
               </xpath>
-
+              <!-- add an attrs to email field-->
               <xpath expr="//field[@name='email']" position="attributes">
                   <attribute name="attrs">{'required':[('partner_contact_choice_control','=', 'email')]}</attribute>
               </xpath>
-
+              <!-- add an attrs to phone field-->
               <xpath expr="//field[@name='phone']" position="attributes">
                  <attribute name="attrs">{'required':[('partner_contact_choice_control','=', 'phone')]}</attribute>
               </xpath>
-
+              <!--add a tab for extra information to after internal_notes tab-->
               <xpath expr="//page[@name = 'internal_notes']" position="after">
                   <page string="Extra Information" name="extra_installation_information">
                       <group>
                           <group >
-<!--                              <field name="partner_birth_place" />-->
-<!--                              <field name="partner_birth_certificate" />-->
                               <field name="partner_before_ngo" widget="radio" options="{'horizontal': true}" />
                               <br/>
                               <field name="partner_family_ngo" widget="radio" options="{'horizontal': true}" />
