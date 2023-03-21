@@ -15,12 +15,12 @@
 					   <form role="form" action="/create/volunteer" method="POST">
 						   <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
 						   <div class="form-group">
-							   <label for="name" class="control-label">Name-Surname</label>
+							   <label for="name" class="control-label">Name Surname</label>
 							   <input type="text" name="name" t-att-value="name" id="name"
-									  class="form-control" placeholder="Muhammed Aba"/>
+									  class="form-control"/>
 							   <label for="phone" class="control-label">Phone Number</label>
 							   <input type="text" name="phone" t-att-value="phone" id="phone"
-									  class="form-control" placeholder="545555555"/>
+									  class="form-control"/>
 						   </div>
 						   <div class="form-group">
 							   <label for="email" class="control-label">Mail</label>
@@ -35,11 +35,11 @@
 								   </t>
 							   </select>
 						   </div>
-						    <div class="form-group">
-							   <label for="partner_blood_groups" class="control-label" >Blood Types</label>
-							   <select name="partner_blood_groups" class="form-control link-style">
-								   <t t-foreach="blood_rec" t-as="blood">
-									   <option t-esc="blood.name" t-att-value="blood.id"/>
+						    <div class="form-group">i
+							   <label for="partner_education_status" class="control-label" >Education Status</label>
+							   <select name="partner_education_status" class="form-control link-style">
+								   <t t-foreach="education_rec" t-as="education">
+									   <option t-esc="education.name" t-att-value="education.id"/>
 								   </t>
 							   </select>
 						   </div>

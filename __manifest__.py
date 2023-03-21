@@ -27,6 +27,7 @@
         "data/partner.blood.groups.csv",
         "data/partner.languages.csv",
         "data/partner.driving.license.csv",
+        "data/partner.education.status.csv",
         "views/partner_member_types_views.xml",
         "views/partner_view.xml",
         "views/partner_blood_groups.xml",
