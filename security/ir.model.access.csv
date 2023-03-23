@@ -1,8 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access.partner.member.types,access_partner_member_types,contacts_stk.model_partner_member_types,base.group_user,1,1,1,1
 access.partner.blood.groups,access_partner_blood_groups,contacts_stk.model_partner_blood_groups,base.group_user,1,1,1,1
-access.partner.education.status,access_partner_education_status,contacts_stk.model_partner_education_status,base.group_user,1,1,1,1
 access.partner.driving.license,access_partner_driving_license,contacts_stk.model_partner_driving_license,base.group_user,1,1,1,1
+access.partner.sector,access_partner_sector,contacts_stk.model_partner_sector,base.group_user,1,1,1,1
 access.partner.languages,access_partner_languages,contacts_stk.model_partner_languages,base.group_user,1,1,1,1
-
 
