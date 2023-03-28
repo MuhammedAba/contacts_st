@@ -34,3 +34,5 @@ class Partner(models.Model):  # orjinalini yaz
     partner_profession_workplace = fields.Char(string="Profession/Workplace")
     partner_sector = fields.Char(string="Sector")
     partner_extra_info = fields.Char(string="Additional Notes")
+    
+    basak_dev
