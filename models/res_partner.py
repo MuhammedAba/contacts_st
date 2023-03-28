@@ -17,11 +17,9 @@ class Partner(models.Model):  # orjinalini yaz
     # TAB1 Extra Information
     partner_languages = fields.Many2many("partner.languages", string="Languages")
     partner_driving_license = fields.Many2many("partner.driving.license", string="Driving License")
-    # partner_education_status = fields.Many2one("partner.education.status", string="Education Status")
     partner_driving_license_control = fields.Selection([('yes', 'Yes'), ('no', 'No')],
                                                        string="Do you have driving license?")
-    partner_driving_license_control = fields.Selection([('yes', 'Yes'), ('no', 'No')],
-                                                       string="Do you have driving license?")
+    partner_education_status = fields.Many2one("partner.education.status", string="Education Status")
     # partner_profession = fields.Many2one("partner.profession", string="Profession")
     partner_sector = fields.Many2one("partner.sector", string="Sector")
     partner_languages = fields.Many2many("partner.languages", string="Languages")
