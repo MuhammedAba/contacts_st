@@ -17,7 +17,7 @@ class Partner(models.Model):  # orjinalini yaz
     # TAB1 Extra Information
     partner_languages = fields.Many2many("partner.languages", string="Languages")
     partner_driving_license = fields.Many2many("partner.driving.license", string="Driving License")
-    partner_education_status = fields.Many2one("partner.education.status", string="Education Status")
+    # partner_education_status = fields.Many2one("partner.education.status", string="Education Status")
     partner_driving_license_control = fields.Selection([('yes', 'Yes'), ('no', 'No')],
                                                        string="Do you have driving license?")
     partner_driving_license_control = fields.Selection([('yes', 'Yes'), ('no', 'No')],
@@ -35,4 +35,10 @@ class Partner(models.Model):  # orjinalini yaz
     partner_sector = fields.Char(string="Sector")
     partner_extra_info = fields.Char(string="Additional Notes")
     
-    basak_dev
+    # seçim gönüllüsü
+    partner_boxes = fields.Many2one("partner.boxes", string="Boxes")
+    partner_districts = fields.Many2one("partner.districts", string="Districts")
+    partner_neighbourhoods = fields.Many2one("partner.neighbourhoods", string="Neighbourhoods")
+    partner_provinces = fields.Many2one("partner.provinces", string="Provinces")
+    partner_schools = fields.Many2one("partner.schools", string="Schools")
+
