@@ -27,7 +27,11 @@
         "data/partner.blood.groups.csv",
         "data/partner.languages.csv",
         "data/partner.driving.license.csv",
+<<<<<<< HEAD
         "data/partner.sector.csv",
+=======
+        "data/partner.education.status.csv",
+>>>>>>> basak_devolopment
         "views/partner_member_types_views.xml",
         "views/partner_view.xml",
         "views/partner_website_from_view.xml"
