@@ -6,14 +6,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-28 15:39+0000\n"
-"PO-Revision-Date: 2023-03-28 15:39+0000\n"
+"POT-Creation-Date: 2023-04-04 15:15+0000\n"
+"PO-Revision-Date: 2023-04-04 15:15+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: contacts_stk
+#: model:website.menu,name:contacts_stk.website_menu_donate_from
+msgid " Donate"
+msgstr "Bağış"
 
 #. module: contacts_stk
 #: model_terms:ir.ui.view,arch_db:contacts_stk.view_partner_form_inherit
@@ -44,107 +49,48 @@ msgid "Blood Groups"
 msgstr "Kan Grupları"
 
 #. module: contacts_stk
-#: model:ir.actions.act_window,name:contacts_stk.action_boxes
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_boxes__name
-#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_boxes
-#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_boxes
-#: model:ir.ui.menu,name:contacts_stk.menu_boxes
-msgid "Boxes"
-msgstr "Sandıklar"
-
-#. module: contacts_stk
 #: model:ir.model,name:contacts_stk.model_res_partner
 msgid "Contact"
 msgstr "Kontak"
 
 #. module: contacts_stk
-#: model_terms:ir.actions.act_window,help:contacts_stk.action_neighbourhoods
-msgid "Create your first Neighbourhoods!"
-msgstr "İlk Mahallelerinizi oluşturun!"
-
-#. module: contacts_stk
-#: model_terms:ir.actions.act_window,help:contacts_stk.action_boxes
-msgid "Create your first boxes!"
-msgstr "İlk sandıklarınızı yaratın!"
-
-#. module: contacts_stk
-#: model_terms:ir.actions.act_window,help:contacts_stk.action_districts
-msgid "Create your first districts!"
-msgstr "İlk ilçenizi oluşturun!"
-
-#. module: contacts_stk
-#: model_terms:ir.actions.act_window,help:contacts_stk.action_partner_donate_types
-msgid "Create your first donate types!"
-msgstr "İlk bağış türlerinizi oluşturun!"
-
-#. module: contacts_stk
-#: model_terms:ir.actions.act_window,help:contacts_stk.action_partner_member_types
-msgid "Create your first member types!"
-msgstr "Önce üyelik tipinizi oluşturun!"
-
-#. module: contacts_stk
-#: model_terms:ir.actions.act_window,help:contacts_stk.action_provinces
-msgid "Create your first provinces!"
-msgstr "İlk illerinizi oluşturun!"
-
-#. module: contacts_stk
-#: model_terms:ir.actions.act_window,help:contacts_stk.action_schools
-msgid "Create your first schools!"
-msgstr "İlk okullarınızı oluşturun!"
+#: model:website.menu,name:contacts_stk.website_menu_volunteer_from
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
+msgid "Create Volunteer"
+msgstr "Gönüllü ol"
 
 #. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__create_uid
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_boxes__create_uid
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_districts__create_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_donate_types__create_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__create_uid
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__create_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__create_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__create_uid
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_neighbourhoods__create_uid
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_provinces__create_uid
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_schools__create_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_sector__create_uid
 msgid "Created by"
 msgstr "Tarafından yaratıldı"
 
 #. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__create_date
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_boxes__create_date
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_districts__create_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_donate_types__create_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__create_date
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__create_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__create_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__create_date
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_neighbourhoods__create_date
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_provinces__create_date
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_schools__create_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_sector__create_date
 msgid "Created on"
 msgstr "oluşturuldu"
 
 #. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__display_name
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_boxes__display_name
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_districts__display_name
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_donate_types__display_name
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__display_name
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__display_name
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__display_name
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__display_name
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_neighbourhoods__display_name
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_provinces__display_name
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_schools__display_name
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_sector__display_name
 msgid "Display Name"
 msgstr "Ekran adı"
-
-#. module: contacts_stk
-#: model:ir.actions.act_window,name:contacts_stk.action_districts
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_districts__name
-#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_districts
-#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_districts
-#: model:ir.ui.menu,name:contacts_stk.menu_districts
-msgid "Districts"
-msgstr "İlçeler"
 
 #. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_passport
@@ -165,10 +111,20 @@ msgid "Do you have driving license?"
 msgstr "Ehliyetiniz var mı?"
 
 #. module: contacts_stk
-#: model:ir.actions.act_window,name:contacts_stk.action_partner_donate_types
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_donate
+msgid "Donate"
+msgstr "Bağış"
+
+#. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_donate_types__name
-#: model:ir.ui.menu,name:contacts_stk.menu_partner_donate_types
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_donate
 msgid "Donate Types"
+msgstr "Bağış Türleri"
+
+#. module: contacts_stk
+#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_donate_types
+#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_donate_types
+msgid "Donate types"
 msgstr "Bağış Türleri"
 
 #. module: contacts_stk
@@ -182,6 +138,14 @@ msgstr "Sürücü ehliyeti"
 #: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_contact_choice_control__email
 msgid "E-mail"
 msgstr "E-mail"
+
+#. module: contacts_stk
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__name
+#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_education_status
+#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_education_status
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
+msgid "Education Status"
+msgstr "Eğitim Durumu"
 
 #. module: contacts_stk
 #: model_terms:ir.ui.view,arch_db:contacts_stk.view_partner_form_inherit
@@ -207,20 +171,18 @@ msgstr "Nasıl iletişime geçebiliriz?"
 
 #. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__id
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_boxes__id
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_districts__id
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_donate_types__id
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__id
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__id
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__id
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__id
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_neighbourhoods__id
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_provinces__id
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_schools__id
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_sector__id
 msgid "ID"
 msgstr "kimlik "
 
 #. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_donate
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
 #: model_terms:ir.ui.view,arch_db:contacts_stk.view_partner_form_inherit
 msgid "Identification Number"
 msgstr "Kimlik Numarası"
@@ -245,48 +207,42 @@ msgstr "Diller"
 
 #. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups____last_update
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_boxes____last_update
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_districts____last_update
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_donate_types____last_update
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license____last_update
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status____last_update
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_languages____last_update
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types____last_update
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_neighbourhoods____last_update
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_provinces____last_update
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_schools____last_update
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_sector____last_update
 msgid "Last Modified on"
 msgstr "Son Değiştirme Tarihi"
 
 #. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__write_uid
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_boxes__write_uid
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_districts__write_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_donate_types__write_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__write_uid
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__write_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__write_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__write_uid
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_neighbourhoods__write_uid
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_provinces__write_uid
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_schools__write_uid
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_sector__write_uid
 msgid "Last Updated by"
 msgstr "Son Güncelleyen"
 
 #. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_blood_groups__write_date
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_boxes__write_date
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_districts__write_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_donate_types__write_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_driving_license__write_date
+#: model:ir.model.fields,field_description:contacts_stk.field_partner_education_status__write_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_languages__write_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__write_date
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_neighbourhoods__write_date
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_provinces__write_date
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_schools__write_date
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_sector__write_date
 msgid "Last Updated on"
 msgstr "Son güncelleme tarihi"
+
+#. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_donate
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
+msgid "Mail"
+msgstr "Mail"
 
 #. module: contacts_stk
 #: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_gender__male
@@ -294,9 +250,8 @@ msgid "Male"
 msgstr "Erkek"
 
 #. module: contacts_stk
-#: model:ir.actions.act_window,name:contacts_stk.action_partner_member_types
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_member_types__name
-#: model:ir.ui.menu,name:contacts_stk.menu_partner_member_types
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
 msgid "Member Types"
 msgstr "Üyelik Tipleri"
 
@@ -307,17 +262,10 @@ msgid "Member types"
 msgstr "Üyelik Tipleri"
 
 #. module: contacts_stk
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_neighbourhoods__name
-msgid "Neighbourhood"
-msgstr "Mahalle"
-
-#. module: contacts_stk
-#: model:ir.actions.act_window,name:contacts_stk.action_neighbourhoods
-#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_neighbourhoods
-#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_neighbourhoods
-#: model:ir.ui.menu,name:contacts_stk.menu_neighbourhoods
-msgid "Neighbourhoods"
-msgstr "Mahalleler"
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_donate
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
+msgid "Name Surname"
+msgstr "Ad Soyad"
 
 #. module: contacts_stk
 #: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_before_ngo__no
@@ -334,6 +282,12 @@ msgid "Phone"
 msgstr "Telefon"
 
 #. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_donate
+#: model_terms:ir.ui.view,arch_db:contacts_stk.create_volunteer
+msgid "Phone Number"
+msgstr "Telefon Numarası"
+
+#. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_before_ngo
 #: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_before_ngo
 msgid "Please enter Ngo name."
@@ -346,29 +300,29 @@ msgid "Profession/Workplace"
 msgstr "Meslek/İşyeri"
 
 #. module: contacts_stk
-#: model:ir.actions.act_window,name:contacts_stk.action_provinces
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_provinces__name
-#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_provinces
-#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_provinces
-#: model:ir.ui.menu,name:contacts_stk.menu_provinces
-msgid "Provinces"
-msgstr "İller"
-
-#. module: contacts_stk
-#: model:ir.actions.act_window,name:contacts_stk.action_schools
-#: model:ir.model.fields,field_description:contacts_stk.field_partner_schools__name
-#: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_schools
-#: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_schools
-#: model:ir.ui.menu,name:contacts_stk.menu_schools
-msgid "Schools"
-msgstr "Okullar"
-
-#. module: contacts_stk
 #: model:ir.model.fields,field_description:contacts_stk.field_partner_sector__name
 #: model:ir.model.fields,field_description:contacts_stk.field_res_partner__partner_sector
 #: model:ir.model.fields,field_description:contacts_stk.field_res_users__partner_sector
 msgid "Sector"
 msgstr "Sektör"
+
+#. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.donate_thanks_ir_ui_view
+#: model_terms:website.page,arch_db:contacts_stk.donate_thanks
+msgid "Thanks!"
+msgstr "Teşekkürler!"
+
+#. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.donate_thanks_ir_ui_view
+#: model_terms:website.page,arch_db:contacts_stk.donate_thanks
+msgid "The donate has been created successfully."
+msgstr "Bağış başarıyla oluşturuldu."
+
+#. module: contacts_stk
+#: model_terms:ir.ui.view,arch_db:contacts_stk.donate_thanks_ir_ui_view
+#: model_terms:website.page,arch_db:contacts_stk.donate_thanks
+msgid "Visit our website any time!"
+msgstr "Web sitemizi istediğiniz zaman ziyaret edin!"
 
 #. module: contacts_stk
 #: model:ir.model.fields.selection,name:contacts_stk.selection__res_partner__partner_before_ngo__yes
@@ -385,16 +339,6 @@ msgid "partner.blood.groups"
 msgstr "ortak.kan.grupları"
 
 #. module: contacts_stk
-#: model:ir.model,name:contacts_stk.model_partner_boxes
-msgid "partner.boxes"
-msgstr "ortak.kutular"
-
-#. module: contacts_stk
-#: model:ir.model,name:contacts_stk.model_partner_districts
-msgid "partner.districts"
-msgstr "ortak.ilçeler"
-
-#. module: contacts_stk
 #: model:ir.model,name:contacts_stk.model_partner_donate_types
 msgid "partner.donate.types"
 msgstr "ortak.bağış.türleri"
@@ -405,6 +349,11 @@ msgid "partner.driving.license"
 msgstr "ortak.sürücü belgesi"
 
 #. module: contacts_stk
+#: model:ir.model,name:contacts_stk.model_partner_education_status
+msgid "partner.education.status"
+msgstr "ortak.eğitim.durumu"
+
+#. module: contacts_stk
 #: model:ir.model,name:contacts_stk.model_partner_languages
 msgid "partner.languages"
 msgstr "ortak.diller"
@@ -413,21 +362,6 @@ msgstr "ortak.diller"
 #: model:ir.model,name:contacts_stk.model_partner_member_types
 msgid "partner.member.types"
 msgstr "ortak.üyelik.tipleri"
-
-#. module: contacts_stk
-#: model:ir.model,name:contacts_stk.model_partner_neighbourhoods
-msgid "partner.neighbourhoods"
-msgstr "ortak.mahalleler"
-
-#. module: contacts_stk
-#: model:ir.model,name:contacts_stk.model_partner_provinces
-msgid "partner.provinces"
-msgstr "ortak.iller"
-
-#. module: contacts_stk
-#: model:ir.model,name:contacts_stk.model_partner_schools
-msgid "partner.schools"
-msgstr "ortak.okullar"
 
 #. module: contacts_stk
 #: model:ir.model,name:contacts_stk.model_partner_sector

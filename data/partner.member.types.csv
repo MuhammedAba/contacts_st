@@ -1,6 +1,5 @@
-id,name
-30,president
-31,active member
-32,voluntarily
-33,donor
-  
+name
+president
+active member
+voluntarily
+donor
