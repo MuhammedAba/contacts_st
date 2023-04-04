@@ -14,7 +14,7 @@ class Partner(models.Model):  # orjinalini yaz
     partner_contact_choice_control = fields.Selection([("email", "E-mail"), ("phone", "Phone")],string="How can we contact?")
     partner_donate_types = fields.Many2one("partner.donate.types", string="Donate types")
     
-    
+     
     # TAB1 Extra Information
     partner_languages = fields.Many2many("partner.languages", string="Languages")
     partner_driving_license = fields.Many2many("partner.driving.license", string="Driving License")

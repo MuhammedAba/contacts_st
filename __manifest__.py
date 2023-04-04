@@ -33,6 +33,7 @@
         "data/partner.member.types.csv",
         "views/partner_view.xml",
         "views/partner_website_from_view.xml"
+        
     ],
 
 }

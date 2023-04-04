@@ -17,8 +17,6 @@ class StkPage(http.Controller):
         request.env['res.partner'].sudo().create(kw)
         return request.render("contacts_stk.volunteer_thanks", {})
     
-    
-    
     # DONATE
     @http.route('/donate_webform', type="http", auth='public', website=True)
     def donate_webform(self, **kw):
