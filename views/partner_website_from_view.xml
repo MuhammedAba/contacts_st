@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<record id="website_menu_volunteer_from" model="website.menu">
-		<field name="name">Create Volunteer</field>
+		<field name="name"> volunteer</field>
 		<field name="url">/volunteer_webform</field>
 		<field name="parent_id" ref="website.main_menu"/>
 		<field name="sequence" type="int">0</field>
 	</record>
 
-   <template id="create_volunteer" name="Create Volunteer">
+   	<template id="create_volunteer" name="Create Volunteer">
 	   <t t-call="website.layout">
 		   <div id="wrap">
 			   <div class="stk_structure">
@@ -15,15 +15,15 @@
 					   <form role="form" action="/create/volunteer" method="POST">
 						   <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
 						   <div class="form-group">
-							   <label for="name" class="control-label">Name Surname</label>
+							   <label for="name" class="control-label" >Name Surname</label>
 							   <input type="text" name="name" t-att-value="name" id="name"
-									  class="form-control"/>
+									  class="form-control" size="50"  max-length="50"/>
 							   <label for="phone" class="control-label">Phone Number</label>
 							   <input type="text" name="phone" t-att-value="phone" id="phone"
-									  class="form-control"/>
+									  class="form-control" max-length="13"/>
 							   <label for="vat" class="control-label">Identification Number</label>
 							   <input type="text" name="vat" t-att-value="vat" id="vat"
-									  class="form-control"/>
+									  class="form-control" max-length="11"/>
 						   </div>
 						   <div class="form-group">
 							   <label for="email" class="control-label">Mail</label>
@@ -38,7 +38,7 @@
 								   </t>
 							   </select>
 						   </div>
-						    <div class="form-group">i
+						    <div class="form-group">
 							   <label for="partner_education_status" class="control-label" >Education Status</label>
 							   <select name="partner_education_status" class="form-control link-style">
 								   <t t-foreach="education_rec" t-as="education">
@@ -56,7 +56,7 @@
 	   </t>
    </template>
 
-	<record id="volunteer_thanks" model="website.page">
+	<record id="donate_thanks" model="website.page">
 		<field name="name">Thanks</field>
 		<field name="type">qweb</field>
 		<field name="url">/volunteer-thank-you</field>
@@ -84,5 +84,87 @@
 			</t>
 		</field>
 	</record>
+
+
+
+<!-- DONATE FORM -->
+
+	<record id="website_menu_donate_from" model="website.menu">
+		<field name="name"> Donate</field>
+		<field name="url">/donate_webform</field>
+		<field name="parent_id" ref="website.main_menu"/>
+		<field name="sequence" type="int">0</field>
+	</record>
+
+   	<template id="create_donate" name="Create Donate">
+	   <t t-call="website.layout">
+		   <div id="wrap">
+			   <div class="stk_structure">
+				   <div class="container">
+					   <form role="form" action="/create/donate" method="POST">
+						   <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+						   <div class="form-group">
+							   <label for="name" class="control-label">Name Surname</label>
+							   <input type="text" name="name" t-att-value="name" id="name"
+									  class="form-control" max-length="50"/>
+							   <label for="phone" class="control-label">Phone Number</label>
+							   <input type="text" name="phone" t-att-value="phone" id="phone"
+									  class="form-control" max-length="13"/>
+							   <label for="vat" class="control-label">Identification Number</label>
+							   <input type="text" name="vat" t-att-value="vat" id="vat"
+									  class="form-control" max-length="11"/>
+						   </div>
+						   <div class="form-group">
+							   <label for="email" class="control-label">Mail</label>
+							   <input type="text" name="email" t-att-value="email" id="email"
+									  class="form-control"/>
+						   </div>
+						   <div class="form-group">
+							   <label for="partner_donate_types" class="control-label" >Donate Types</label>  <!--# FieldName-->
+							   <select name="partner_donate_types" class="form-control link-style">  <!--FieldName-->
+								   <t t-foreach="donate_rec" t-as="donate">  <!--value of volunteer_webform-->
+									   <option t-esc="donate.name" t-att-value="donate.id"/>
+								   </t>
+							   </select>
+						   </div>
+						    <div class="clearfix_stk_login_buttons">
+							   <button type="submit" class="btn btn-primary pull-left">Donate</button>
+						   </div>
+					   </form>
+				   </div>
+			   </div>
+		   </div>
+	   </t>
+   </template>
+
+	<record id="donate_thanks" model="website.page">
+		<field name="name">Thanks</field>
+		<field name="type">qweb</field>
+		<field name="url">/donate-thank-you</field>
+		<field name="website_published">True</field>
+		<field name="key">contacts_stk.donate_thanks</field>
+		<field name="arch" type="xml">
+			<t name="Thanks" t-name="contacts_stk.donate_thanks">
+				<t t-call="website.layout">
+					<div id="wrap">
+						<div class="container">
+							<h1>Thanks!</h1>
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="alert alert-success" role="status">
+										The donate has been created successfully.
+									</div>
+									<p>
+										Visit our website any time!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</t>
+			</t>
+		</field>
+	</record>
+
 </odoo>
 

@@ -11,16 +11,17 @@ class Partner(models.Model):  # orjinalini yaz
     partner_blood_groups = fields.Many2one("partner.blood.groups", string="Blood Groups")
     partner_gender = fields.Selection([("male", "Male"), ("female", "Female")], string="Gender")
     partner_birth_date = fields.Date(string="Birth Date")
-    partner_contact_choice_control = fields.Selection([("email", "E-mail"), ("phone", "Phone")],
-                                                      string="How can we contact?")
-
+    partner_contact_choice_control = fields.Selection([("email", "E-mail"), ("phone", "Phone")],string="How can we contact?")
+    partner_donate_types = fields.Many2one("partner.donate.types", string="Donate types")
+    
+    
     # TAB1 Extra Information
     partner_languages = fields.Many2many("partner.languages", string="Languages")
     partner_driving_license = fields.Many2many("partner.driving.license", string="Driving License")
     partner_driving_license_control = fields.Selection([('yes', 'Yes'), ('no', 'No')],
                                                        string="Do you have driving license?")
     partner_education_status = fields.Many2one("partner.education.status", string="Education Status")
-    # partner_profession = fields.Many2one("partner.profession", string="Profession")
+    
     partner_sector = fields.Many2one("partner.sector", string="Sector")
     partner_languages = fields.Many2many("partner.languages", string="Languages")
     partner_passport = fields.Selection([('yes', 'Yes'), ('no', 'No')], string='Do you have a passport?')
@@ -33,10 +34,3 @@ class Partner(models.Model):  # orjinalini yaz
     partner_sector = fields.Char(string="Sector")
     partner_extra_info = fields.Char(string="Additional Notes")
     
-    # seçim gönüllüsü
-    partner_boxes = fields.Many2one("partner.boxes", string="Boxes")
-    partner_districts = fields.Many2one("partner.districts", string="Districts")
-    partner_neighbourhoods = fields.Many2one("partner.neighbourhoods", string="Neighbourhoods")
-    partner_provinces = fields.Many2one("partner.provinces", string="Provinces")
-    partner_schools = fields.Many2one("partner.schools", string="Schools")
-
