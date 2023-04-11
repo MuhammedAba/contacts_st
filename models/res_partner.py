@@ -31,6 +31,6 @@ class Partner(models.Model):  # orjinalini yaz
     partner_family_ngo = fields.Selection([('yes', 'Yes'), ('no', 'No')],
                                           string='Is there anyone in the family with an NGO?')
     partner_profession_workplace = fields.Char(string="Profession/Workplace")
-    partner_sector = fields.Char(string="Sector")
+    #partner_sector = fields.Char(string="Sector")
     partner_extra_info = fields.Char(string="Additional Notes")
     
