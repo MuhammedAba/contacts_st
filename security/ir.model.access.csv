@@ -4,12 +4,7 @@ access.partner.blood.groups,access_partner_blood_groups,contacts_stk.model_partn
 access.partner.driving.license,access_partner_driving_license,contacts_stk.model_partner_driving_license,base.group_user,1,1,1,1
 access.partner.sector,access_partner_sector,contacts_stk.model_partner_sector,base.group_user,1,1,1,1
 access.partner.languages,access_partner_languages,contacts_stk.model_partner_languages,base.group_user,1,1,1,1
-
 access.partner.donate.types,access_partner_donate_types,contacts_stk.model_partner_donate_types,base.group_user,1,1,1,1
-access.partner.provinces,access_partner_provinces,contacts_stk.model_partner_provinces,base.group_user,1,1,1,1
-access.partner.districts,access_partner_districts,contacts_stk.model_partner_districts,base.group_user,1,1,1,1
-access.partner.neighbourhoods,access_partner_neighbourhoods,contacts_stk.model_partner_neighbourhoods,base.group_user,1,1,1,1
-access.partner.schools,access_partner_schools,contacts_stk.model_partner_schools,base.group_user,1,1,1,1
-access.partner.boxes,access_partner_boxes,contacts_stk.model_partner_boxes,base.group_user,1,1,1,1
+
 
 

@@ -29,18 +29,10 @@
         "data/partner.driving.license.csv",
         "data/partner.sector.csv",
         "data/partner.education.status.csv",
-
-        # "data/partner.education.status.csv",
-        "data/partner.sector.csv",
         "views/partner_member_types_views.xml",
         "views/partner_donate_types_views.xml",
         "views/partner_view.xml",
-        # "views/partner_website_from_view.xml",
-        "views/partner_provinces.xml",
-        "views/partner_districts.xml",
-        "views/partner_neighbourhoods.xml",        
-        "views/partner_schools.xml",
-        "views/partner_boxes.xml"
-    ],
+        "views/partner_website_from_view.xml",
+         ],
 
 }

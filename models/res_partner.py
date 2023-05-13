@@ -29,10 +29,3 @@ class Partner(models.Model):  # orjinalini yaz
     partner_profession_workplace = fields.Char(string="Profession/Workplace")
     partner_sector = fields.Char(string="Sector")
     partner_extra_info = fields.Char(string="Additional Notes")
-
-    # seçim gönüllüsü
-    partner_boxes = fields.Many2one("partner.boxes", string="Boxes")
-    partner_districts = fields.Many2one("partner.districts", string="Districts")
-    partner_neighbourhoods = fields.Many2one("partner.neighbourhoods", string="Neighbourhoods")
-    partner_provinces = fields.Many2one("partner.provinces", string="Provinces")
-    partner_schools = fields.Many2one("partner.schools", string="Schools")
