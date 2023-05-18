@@ -8,11 +8,11 @@
               <xpath expr="//field[@name='vat']" position="after" >
                   <field name="partner_member_types"  attrs="{'invisible': [('is_company','=', True)]}"  />
                   <field name="partner_blood_groups"  attrs="{'invisible': [('is_company','=', True)]}" />
-                  <field name="partner_job"  attrs="{'invisible': [('is_company','=', True)]}" />
+                  <field name="partner_job"  attrs="{'invisible': [('is_company','=', True)]}" />  
 
-                  <field name="partner_gender" attrs="{'invisible': [('is_company','=', True)]}" />
+                 <!-- <field name="partner_gender" attrs="{'invisible': [('is_company','=', True)]}" /> --> 
                   <field name="partner_birth_date" attrs="{'invisible': [('is_company','=', True)]}" />
-                  <!-- <field name="partner_education_status"  attrs="{'invisible': [('is_company','=', True)]}" /> -->
+                  <field name="partner_education_status"  attrs="{'invisible': [('is_company','=', True)]}" /> 
                   <field name="partner_driving_license_control"  widget="radio" options="{'horizontal': true}" />
                   <field name="partner_driving_license" widget="many2many_tags" attrs="{'invisible':[('partner_driving_license_control','=', 'no')]}" />
                   <field name="partner_contact_choice_control"  widget="radio" options="{'horizontal': true}" />
@@ -58,18 +58,6 @@
                           <br/>
                           <label for="partner_extra_info" string="Additional Note" />
                           <field name="partner_extra_info" />
-                      </group>
-                  </page>
-              </xpath>
-
-               <xpath expr="//page[@name = 'extra_installation_information']" position="after">
-                  <page string="Election Volunteer" name="election_volunteer">
-                      <group>
-                          <field name="partner_provinces" attrs="{'invisible': [('is_company','=', True)]}" />
-                          <field name="partner_districts" attrs="{'invisible': [('is_company','=', True)]}" />
-                          <field name="partner_neighbourhoods" attrs="{'invisible': [('is_company','=', True)]}"/>
-                          <field name="partner_schools" attrs="{'invisible': [('is_company','=', True)]}" />
-                          <field name="partner_boxes" attrs="{'invisible': [('is_company','=', True)]}" />
                       </group>
                   </page>
               </xpath>
